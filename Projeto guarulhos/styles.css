@@ -1,0 +1,233 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+h2 {
+    color: #555;
+}
+
+/* Contatos dentro do header */
+.contatos {
+    background-color: #ffffff;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contatos h3 {
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.contatos p {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Contêiner para o mapa e o painel */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Mapa container */
+#map {
+    width: 70%; /* Ajustado para dar mais espaço ao mapa */
+    height: 500px;
+    margin-right: 20px;
+    border: 2px solid #000000;
+}
+
+/* Texto explicativo */
+#informacao {
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Painel de controle */
+.panel {
+    background-color: #2231274b;
+    padding: 20px;
+    width: 28%; /* Ajustado para deixar mais espaço ao mapa */
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(44, 43, 43, 0.1);
+}
+
+input[type="text"], textarea, select {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e47208;
+    color: rgb(87, 12, 12);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #161516;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 8px;
+    background-color: #ffffff;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #map {
+        width: 100%;
+        height: 400px;
+        margin-right: 0;
+    }
+
+    .panel {
+        width: 90%;
+        max-width: 600px;
+        margin-top: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contatos {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+/* Imagem carregada dinamicamente */
+.imagem-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contatos dentro do header */
+.contatos {
+    background-color: #ffffff;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contatos h3 {
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.contatos p {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Campo de upload */
+.upload-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.upload-container label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.upload-container input {
+    font-size: 14px;
+}

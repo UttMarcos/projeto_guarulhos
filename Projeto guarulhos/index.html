@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bairro Sem Problemas - Guarulhos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+  <header>
+    <h1>Bairro Sem Problemas - Guarulhos</h1>
+    <div class="contatos">
+      <h3>Contatos para Problemas Urgentes</h3>
+      <p>Telefone EDP: 0800 721 0123</p>
+      <p>Mais Informações: (11) 2468-7218</p>
+      
+    </div>
+  </header>
+
+  <!-- Texto explicativo -->
+  <p id="informacao">Notou algum problema na sua rua? Registre agora mesmo no final da página!</p>
+
+  <!-- Contêiner para o mapa e o painel -->
+  <div class="content-container">
+    <!-- Mapa -->
+    <div id="map"></div>
+
+    <!-- Painel de Controle -->
+    <div class="panel">
+      <h2>Registrar Problema</h2>
+      <label for="tipo">Tipo de Problema:</label>
+      <select id="tipo">
+        <option value="lixo">Lixo</option>
+        <option value="iluminacao">Falta de Iluminação</option>
+        <option value="buraco">Buraco na Rua</option>
+      </select>
+      <br><br>
+      <label for="cep">Nome da Rua</label><br>
+      <input type="text" id="cep" placeholder="Ex.: Avenida Salgado Filho">
+      <br><br>
+      <label for="numero">Número da Rua:</label><br>
+      <input type="text" id="numero" placeholder="Ex.: 1000">
+      <br><br>
+      <label for="descricao">Descrição:</label><br>
+      <textarea id="descricao" rows="4" cols="30"></textarea>
+      <br><br>
+      <button onclick="adicionarProblema()">Adicionar</button>
+      <h3>Problemas Registrados:</h3>
+      <ul id="problemas"></ul>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
